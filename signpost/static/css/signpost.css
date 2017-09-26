@@ -1,0 +1,44 @@
+/* CSS for BoxXBlock */
+
+.signpost{
+	background-color: #F7F7F7;
+	overflow: auto;
+    margin: 16px 0;
+    border-top:3px solid #0075b4;
+    padding:2%;
+}
+  .signpostHeading{
+   	margin:2% !important;
+  }
+.signpostIcon{
+	font-size: 3em;
+	font-style: normal;
+	text-align:center;
+	width:10%;
+	color: #0075b4;
+	margin: 2% auto;
+	box-sizing:border-box;
+	float:left;
+}
+.signpostText{
+	width: 90%;
+	box-sizing:border-box;
+	float:left;
+  padding:2% 2% 0 0;
+}
+  @media screen and (max-width: 768px){
+   .signpostText{
+     float:none;
+     width:100%;
+     padding: 0 5%;
+   }
+    .signpostIcon{
+     float:none;
+     width:100%;
+     margin:2% auto 0 auto;
+   }
+      .signpostHeading{
+        text-align:center;
+   	margin:5% 5% 0 5% !important;
+  }
+  }
