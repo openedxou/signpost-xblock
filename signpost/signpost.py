@@ -7,7 +7,7 @@ from xblock.fields import Scope, String
 from xblock.fragment import Fragment
 from xblockutils.studio_editable import StudioEditableXBlockMixin
 
-class signpostXBlock(StudioEditableXBlockMixin, XBlock):
+class SignpostXBlock(StudioEditableXBlockMixin, XBlock):
     display_name = String(display_name="Display name", default='signpost', scope=Scope.settings)
     signposticon = String(display_name="Icon", default="book", scope=Scope.content,
         help="Pick the icon to appear alongside your signpost. Any icon from <a href=\"http://fontawesome.io/icons/\">Font Awesome</a> may be used. Simply use the icon name as listed, for example: eye, comments, book.")

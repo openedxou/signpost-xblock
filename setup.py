@@ -34,7 +34,7 @@ setup(
     ],
     entry_points={
         'xblock.v1': [
-            'signpost = signpost:signpostXBlock',
+            'signpost = signpost:SignpostXBlock',
         ]
     },
     package_data=package_data("signpost", ["static", "public"]),
