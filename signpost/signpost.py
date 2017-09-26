@@ -10,7 +10,7 @@ from xblockutils.studio_editable import StudioEditableXBlockMixin
 class SignpostXBlock(StudioEditableXBlockMixin, XBlock):
     display_name = String(display_name="Display name", default='signpost', scope=Scope.settings)
     signposticon = String(display_name="Icon", default="book", scope=Scope.content,
-        help="Pick the icon to appear alongside your signpost. Any icon from <a href=\"http://fontawesome.io/icons/\">Font Awesome</a> may be used. Simply use the icon name as listed, for example: eye, comments, book.")
+        help="Pick the icon to appear alongside your signpost. Any icon from <a href=\"http://fontawesome.io/icons/\" target=\"_blank\">Font Awesome</a> may be used. Simply use the icon name as listed, for example: eye, comments, book.")
     signposttext = String(display_name="Contents", multiline_editor='html', resettable_editor=False,
         default="", scope=Scope.content,
         help="Enter the text to be displayed within your signpost, instructing students on what to do.")
