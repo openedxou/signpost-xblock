@@ -8,7 +8,7 @@ from xblock.fragment import Fragment
 from xblockutils.studio_editable import StudioEditableXBlockMixin
 
 class SignpostXBlock(StudioEditableXBlockMixin, XBlock):
-    display_name = String(display_name="Display name", default='signpost', scope=Scope.settings)
+    display_name = String(display_name="Display name", default='Signpost', scope=Scope.settings)
     signposticon = String(display_name="Icon", default="book", scope=Scope.content,
         help="Pick the icon to appear alongside your signpost. Any icon from <a href=\"http://fontawesome.io/icons/\" target=\"_blank\">Font Awesome</a> may be used. Simply use the icon name as listed, for example: eye, comments, book.")
     signposttext = String(display_name="Contents", multiline_editor='html', resettable_editor=False,
@@ -30,7 +30,6 @@ class SignpostXBlock(StudioEditableXBlockMixin, XBlock):
         frag = Fragment(html.format(self=self))
         frag.add_css(self.resource_string("static/css/signpost.css"))
         frag.add_javascript(self.resource_string("static/js/src/signpost.js"))
-        frag.initialize_js('signpostXBlock')
         return frag
     # Make fields editable in studio
     editable_fields = ('display_name', 'signpostheading', 'signposticon', 'signposttext', )
